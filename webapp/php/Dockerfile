@@ -23,3 +23,5 @@ WORKDIR /var/www/html
 RUN composer install --no-dev
 
 COPY . /var/www/html
+
+COPY ./www.conf /usr/local/etc/php-fpm.d/www.conf
